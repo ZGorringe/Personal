@@ -121,6 +121,13 @@ img {
 	border-radius: 1rem;
 }
 
+@media (max-width: 795px) {
+	.name {
+		margin: 1rem;
+		float: left;
+	}
+}
+
 @media (max-width: 550px) {
 	.topContent {
 		color: white;
@@ -147,7 +154,7 @@ img {
 		border: .2rem solid #000;
 		border-radius: 2rem;
 		color: white;
-		margin: 10% 38%;
+		margin: 12% 38%;
 		text-align: center;
 		-webkit-user-select: none;
 		cursor: default;
@@ -162,7 +169,7 @@ img {
 		background: rgba(0,0,0,0.50);
 		float: right;
 		border: .3rem solid #000;
-		margin: -535px 0% 5% 60%;
+		margin: -565px 0% 5% 60%;
 		padding: 3%;
 
 	}
