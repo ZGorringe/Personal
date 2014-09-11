@@ -1,0 +1,169 @@
+html {
+	font-size: 62.5%;
+	font-family: Arial, sans-serif;
+	height: 100%;
+	width: 100%;
+	background: url(http://epod.usra.edu/.a/6a0105371bb32c970b0133eee7d763970b-pi) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	position: relative;	
+}
+
+.topContent {
+	color: white;
+	font-size: 3rem;
+	text-align: center;
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: auto;
+	width: 100%;
+	background: rgba(0,0,0,0.50);
+	z-index: 110; /*Need to bring this in front of the shade*/
+	border-bottom: .3rem rgb(0,0,0) solid;
+}
+
+.button {
+	height: 2rem;
+	width: 2rem;
+	border: .2rem solid #000;
+	border-radius: 2rem;
+	color: white;
+	margin: 2rem;
+	text-align: center;
+	-webkit-user-select: none;
+	cursor: default;
+	transition: background .3s ease;
+	transition: width .3s ease;
+	transition: height .3s ease;
+
+}
+
+.name {
+	margin: 1.5rem;
+	float: left;
+}
+
+.button:hover {
+	background: white;
+	width: 4rem;
+	height: 4rem;
+}
+
+.b1 {
+	background: #df47f7;
+}
+
+.b2 {
+	background: #f9f14a;
+}
+
+.b3 {
+	background: #f7902a;
+}
+
+.b4 {
+	background: #34f941;
+}
+
+.b5 {
+	background: #9b9a99;
+}
+
+.b6 {
+	background: #ed4b59;
+}
+
+.b7 {
+	background: #3eefe3;
+}
+
+.b8 {
+	background: #5757f2;
+}
+
+.test {
+	height: 100px;
+	width: 100px;
+	background: red;
+}
+
+.hide {
+	display: none;
+}
+
+.mainContent {
+	height: auto;
+	width: auto;
+	background: rgba(0,0,0,0.50);
+	float: right;
+	border: .3rem solid #000;
+	margin: 5% 5% 5% 60%;
+	padding: 3%;
+
+}
+
+p {
+	font-size: 1.5rem;
+	word-spacing: .5rem;
+	color: white;
+}
+
+img {
+	width: 10%;
+	height: auto;
+	margin-left: 16%;
+}
+
+.facebook {
+	border-radius: 1rem;
+}
+
+@media (max-width: 550px) {
+	.topContent {
+		color: white;
+		font-size: 3rem;
+		text-align: center;
+		display: inline-flex;
+		flex-direction: column;
+		justify-content: space-between;
+		float: left;
+		height: 100%;
+		width: 140px;
+		background: rgba(0,0,0,0.50);
+		z-index: 110; /*Need to bring this in front of the shade*/
+		border-bottom: .3rem rgb(0,0,0) solid;
+		border-right: .3rem rgb(0,0,0) solid;
+	}
+	.name {
+		margin: 10%rem;
+		float: left;
+	}
+	.button {
+		height: 2rem;
+		width: 2rem;
+		border: .2rem solid #000;
+		border-radius: 2rem;
+		color: white;
+		margin: 10% 38%;
+		text-align: center;
+		-webkit-user-select: none;
+		cursor: default;
+		transition: background .3s ease;
+		transition: width .3s ease;
+		transition: height .3s ease;
+
+	}
+	.mainContent {
+		height: auto;
+		width: auto;
+		background: rgba(0,0,0,0.50);
+		float: right;
+		border: .3rem solid #000;
+		margin: -535px 0% 5% 60%;
+		padding: 3%;
+
+	}
+}
