@@ -1,14 +1,23 @@
 html {
 	font-size: 62.5%;
-	font-family: Arial, sans-serif;
+	font-family: arial, sans-serif;
 	height: 100%;
 	width: 100%;
-	background: url(http://epod.usra.edu/.a/6a0105371bb32c970b0133eee7d763970b-pi) no-repeat center center fixed;
+	background: url(http://theblondecoyote.files.wordpress.com/2011/12/thors-hammer-panorama.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 	position: relative;	
+}
+
+.ta-editor {
+    min-height: 300px;
+    height: auto;
+    overflow: auto;
+    font-family: inherit;
+    font-size: 100%;
+    margin:20px 0;
 }
 
 .topContent {
@@ -48,8 +57,7 @@ html {
 
 .button:hover {
 	background: white;
-	width: 4rem;
-	height: 4rem;
+	cursor: pointer;
 }
 
 .b1 {
@@ -94,15 +102,32 @@ html {
 	display: none;
 }
 
-.mainContent {
+#clockbox {
+	font-family: arial;
+	text-align: center;
+	color: rgba(255,255,255, .75);
+	font-size: 10rem;
+}
+
+.clockText {
+	font-family: arial;
+	text-align: center;
+	color: rgba(255,255,255, .75);
+	font-size: 8rem;
+}
+
+.content {
 	height: auto;
 	width: auto;
 	background: rgba(0,0,0,0.50);
-	float: right;
 	border: .3rem solid #000;
-	margin: 5% 5% 5% 60%;
+	margin: 5% 25% 5% 25%;
 	padding: 3%;
-
+}
+input {
+	width: 100%;
+	font-size: 1.5rem;
+	height: 10rem;
 }
 
 p {
