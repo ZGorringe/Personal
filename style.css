@@ -102,6 +102,18 @@ html {
 	display: none;
 }
 
+.my-show-hide-animation.ng-hide-add,
+.my-show-hide-animation.ng-hide-remove {
+  -webkit-transition:0.5s linear all;
+  transition:0.5s linear all;
+  display: block!important;
+  opacity: 1;
+}
+
+.my-show-hide-animation.ng-hide {
+  opacity:0;
+}
+
 #clockbox {
 	font-family: arial;
 	text-align: center;
@@ -124,10 +136,23 @@ html {
 	margin: 5% 25% 5% 25%;
 	padding: 3%;
 }
-input {
-	width: 100%;
+textarea {
 	font-size: 1.5rem;
-	height: 10rem;
+}
+
+.submitButton {
+	margin-left: 45%;
+	margin-top: 5%;
+	width: 10rem;
+	height: 5rem;
+	border-radius: .2rem;
+	font-size: 2rem;
+	transition: background .3s ease;
+}
+
+.submitButton:hover {
+	background: #5757f2;
+	font-color: white;
 }
 
 p {

@@ -8,6 +8,24 @@ app.controller('mainCtrl', function($scope, parseService){
   $scope.aboutMeText = false;
   $scope.hideBlogInput = false;
   $scope.loginText = false;
+  $scope.projectText = false;
+
+  $scope.showProjectText = function() {
+    $scope.projectText = !$scope.projectText;
+  }
+
+  $scope.showProjects = function() {
+    $scope.projects = !$scope.projects;
+    if ($scope.hideBlog = !$scope.hideBlog) {
+      $scope.hideBlog = !$scope.hideBlog;
+    }
+    if ($scope.hideBlogInput = !$scope.hideBlogInput) {
+      $scope.hideBlogInput = !$scope.hideBlogInput;
+    }
+    if ($scope.aboutMe = !$scope.aboutMe) {
+      $scope.aboutMe = !$scope.aboutMe;
+    }
+  }
 
   $scope.showBlogInput = function() {
     $scope.hideBlogInput = !$scope.hideBlogInput;
@@ -16,6 +34,9 @@ app.controller('mainCtrl', function($scope, parseService){
     }
     if ($scope.aboutMe = !$scope.aboutMe) {
       $scope.aboutMe = !$scope.aboutMe;
+    }
+    if ($scope.projects = !$scope.projects) {
+      $scope.projects = !$scope.projects;
     }
   }
 
@@ -31,6 +52,9 @@ app.controller('mainCtrl', function($scope, parseService){
     if ($scope.hideBlogInput = !$scope.hideBlogInput) {
       $scope.hideBlogInput = !$scope.hideBlogInput;
     }
+    if ($scope.projects = !$scope.projects) {
+      $scope.projects = !$scope.projects;
+    }
   };
 
   $scope.showBlogText = function() {
@@ -44,6 +68,9 @@ app.controller('mainCtrl', function($scope, parseService){
     }
     if ($scope.hideBlogInput = !$scope.hideBlogInput) {
       $scope.hideBlogInput = !$scope.hideBlogInput;
+    }
+    if ($scope.projects = !$scope.projects) {
+      $scope.projects = !$scope.projects;
     }
   };
 

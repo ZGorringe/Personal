@@ -13,7 +13,7 @@
 			<div class="name">Zachary Gorringe</div>
 			<div class="button b1" ng-click="showAboutMe()" ng-mouseenter="showAboutMeText()" ng-mouseleave="showAboutMeText()"></div>
 			<div class="button b2" ng-click="showBlog(); getParseData()" ng-mouseenter="showBlogText()" ng-mouseleave="showBlogText()"></div>
-			<div class="button b3"></div>
+			<div class="button b3" ng-click="showProjects()" ng-mouseenter="showProjectText()" ng-mouseleave="showProjectText()"></div>
 			<div class="button b4"></div>
 			<div class="button b5"></div>
 			<div class="button b6"></div>
@@ -24,6 +24,7 @@
 		<div class="clockText" ng-show="aboutMeText">About Me</div>
 		<div class="clockText" ng-show="blogText">Blog</div>
 		<div class="clockText" ng-show="loginText">Personal Login</div>
+		<div class="clockText" ng-show="projectText">Current Projects</div>
 		<div class="clock">
 			<script type="text/javascript">
 			function GetClock(){
@@ -44,9 +45,9 @@
 		   </script>
 		</div>
 		<div class="content" ng-show="aboutMe">
-			<p>My name is <strong>Zac Gorringe</strong>.  I am currently attending the DevMounatin Boot Camp until December of 2014.</p>
+			<p>My name is <strong>Zac Gorringe</strong>.  I am a recent graduate of the DevMountain Fall 2014 Cohort.  My focus is on web application development, both front-end and back-end programming.  Currently I am looking for a position that fits my skillset and look to contribute to a strong development team.</p>
 			<p>Previously, I have spent six years in the financial services industry.  I have worked in a number of different capacities but primarily focused on loan origination and real estate loan processing.</p>
-			<p>I have been married for six years, have two dogs and currently reside in Salt Lake City, UT</p>
+			<p>I currently reside in Salt Lake City, UT</p>
 			<a href="https://plus.google.com/u/0/102214444573989073419/posts/p/pub"><img src="http://files.softicons.com/download/system-icons/windows-8-metro-invert-icons-by-dakirby309/png/512x512/Internet%20Shortcuts%20&%20Manufacturers/Google+.png" /></a>
 			<a href="mailto:gorringezac@gmail.com"><img src="http://icons.iconarchive.com/icons/igh0zt/ios7-style-metro-ui/512/MetroUI-Other-Mail-icon.png" /></a>
 			<a href="https://www.facebook.com/"><img class="facebook" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR19giEI839bHDsxB3qrpvqTnd_fT21G1RpULO_NyN56KGXWT6YXhXUuX_m" /></a>
@@ -55,12 +56,17 @@
 			<p ng-repeat="message in messages">{{message.text}}</p>
 		</div>
 		<div class="content" ng-show="hideBlogInput">
-			<form ng-submit="sendMessage()">
-				<input class="blogPostInput" type="text" ng-model="message.text" placeholder="Update Blog">
-				<button type="submit">Submit</button>
+			<form>
+				<textarea rows="10" cols="100" class="blogPostInput" type="text" ng-model="message.text" placeholder="Update Blog"></textarea>
+				<button class="submitButton" type="submit" ng-click="sendMessage()">Submit</button>
 			</form>
 		</div>
+		<div class="content" ng-show="projects">
+			<p><strong>CFB - Tweet</strong></p>
+			<p>Currently in development - Fullstack web application that acts as a twitter platform.  Focus is for twitter users to be able to follow and discover twitter users that are directly related to their favorite college football team.  Will also provide functionality to interact with opposing fans directly on the site without the need to follow users they wouldn't normally won't showing on their timeline.  Current progress has a fully working login utilizing twitter OAuth services.</p>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-route.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-animate.min.js"></script>
 		<script src="JS/app.js"></script>
 		<script src="JS/mainCtrl.js"></script>
 		<script src="JS/parseService.js"></script>
