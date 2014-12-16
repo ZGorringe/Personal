@@ -11,6 +11,11 @@ html {
 	position: relative;	
 }
 
+a {
+	text-decoration: none;
+	color: white;
+}
+
 .ta-editor {
     min-height: 300px;
     height: auto;
